@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.static('./'));
 
-app.get('http://52.90.22.200/test', (req, res) => {
+app.get('http://52.90.22.200:3030/test', (req, res) => {
   res.status(200).send(JSON.stringify('SERVER SAYS OK'))
 })
 
