@@ -10,7 +10,7 @@ class App extends React.Component {
 
   componentDidMount () {
     console.log('App componentDidMount')
-    fetch('http://localhost:3030/test')
+    fetch('http://52.90.22.200/test')
     .then((resp) => resp.json())
     .then((result) => {
       console.log('SUCCESS', result);
