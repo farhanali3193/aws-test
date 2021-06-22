@@ -11,9 +11,8 @@ class App extends React.Component {
   componentDidMount () {
     console.log('App componentDidMount')
     fetch('http://52.90.22.200/test')
-    .then((resp) => resp.json())
-    .then((result) => {
-      console.log('SUCCESS', result);
+    .then((resp) => {
+      console.log('SUCCESS', resp)
     })
     .catch((err) => {
       console.log('FAILURE', err)
