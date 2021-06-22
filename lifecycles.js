@@ -10,6 +10,14 @@ class App extends React.Component {
 
   componentDidMount () {
     console.log('App componentDidMount')
+    fetch('http://localhost:3030/test')
+    .then((resp) => resp.json())
+    .then((result) => {
+      console.log('SUCCESS', result);
+    })
+    .catch((err) => {
+      console.log('FAILURE', err)
+    })
   }
 
   render () {
